@@ -9,6 +9,22 @@ import React from "react";
 //     );
 // } 
 
+//? or we can simply use props and access each prop using props.propName in parant and child components
+// function GreetChild(props){
+//     return(
+//         <h3> Hello, {props.name}! You are {props.age} years old.</h3>
+//     );
+// }
+
+// function GreetProp(){
+//     return(
+//         <div>
+//             <h2>Greetings using Props:</h2>
+//             <GreetChild name="Mayank Pandey" age={21} />
+//             <GreetChild name="John Doe" age={30} />
+//         </div>
+//     );
+// }
 
 
 function UserProfile({name, age, isOnline, address, hobbies, greet}){
