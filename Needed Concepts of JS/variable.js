@@ -23,3 +23,5 @@ console.log(pi); // should print 3.14
 //! const pi;
 // const must be initialized during declaration 
 //? this is the difference between let and const in let you can declare and initialize later but in const you have to do both at the same time
+
+
