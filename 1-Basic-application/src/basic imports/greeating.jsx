@@ -9,11 +9,12 @@ function Greeting(){
         textAlign: "center",
         marginTop: "10px"
     }
+    
     return (
         <div>
             <h3 style={h2_Style}>Greeting 👋</h3>
             <br />
-            <img src={img1} alt="cat-img" class="img-cont"></img> 
+            <img src={img1} alt="cat-img" className="img-cont"></img> 
         </div>
     );
 }

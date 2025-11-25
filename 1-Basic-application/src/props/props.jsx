@@ -26,7 +26,7 @@ import React from "react";
 //     );
 // }
 
-
+//? Here we will create a UserProfile component that accepts various types of props and define them directly in the app.jsx file
 function UserProfile({name, age, isOnline, address, hobbies, greet}){
     return(
         <div style={{border: '1px solid #ccc', padding: '16px', borderRadius: '8px', maxWidth: '400px', margin: '16px auto'}}>
@@ -42,7 +42,7 @@ function UserProfile({name, age, isOnline, address, hobbies, greet}){
             {// Object prop
             }
             <div>
-                <h3>Address:</h3>
+                <h3 className="bg-red-500">Address:</h3>
                 <p>{address.city}, {address.zip}</p>
             </div>
             {// Array prop

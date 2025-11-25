@@ -3,7 +3,7 @@ import profileImg from "./assets/profile-img.jpeg";
 
 function Intro( props ) {
     return (
-        <div>
+        <div className="intro border-2 border-gray-300 rounded-2xl m-8 shadow-lg">
             <div className="flex justify-between items-start p-6">
                 <div className="title-info ml-4">
                     <p className="name">Name: Mayank Pandey</p>
@@ -23,6 +23,14 @@ function Intro( props ) {
                     ))}
                 </ul>
             </div>  
+            <div className="education border-t-2 border-gray-300 p-6 mr-8 ml-8 mb-8">
+                <h2 className="text-2xl font-bold mb-4">Education</h2>
+                <ul className="list-disc list-inside">
+                    {props.education.map(edu => (
+                        <li>{edu}</li>
+                    ))}
+                </ul>
+            </div>
         </div>
     )
 }

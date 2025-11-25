@@ -3,6 +3,25 @@ import Greeting  from './basic imports/greeating';
 import Tablediv from './basic imports/table';
 import UserProfile from './props/props'
 
+//? How life-cycle of react works?
+
+//* Mounting Phase
+// 1. constructor() -> initializes state and binds methods
+// 2. static getDerivedStateFromProps() -> sync state with props
+// 3. render() -> returns JSX to be rendered
+// 4. componentDidMount() -> side-effects like data fetching
+
+//* Updating Phase
+// 1. static getDerivedStateFromProps() -> sync state with props
+// 2. shouldComponentUpdate() -> optimize re-rendering
+// 3. render() -> returns JSX to be rendered
+// 4. getSnapshotBeforeUpdate() -> capture info before DOM updates
+// 5. componentDidUpdate() -> side-effects after updates
+
+//* Unmounting Phase
+// 1. componentWillUnmount() -> cleanup tasks
+
+
 function App() {
   const userAddress = { city: "Phagwara", zip: "114441" };
   const userHobbies = ["coding" , "music"];
